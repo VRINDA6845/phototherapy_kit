@@ -1,0 +1,36 @@
+name: phototherapy_app
+description: "A Flutter app for monitoring and guiding Neonatal Phototherapy sessions."
+
+publish_to: 'none' # prevents accidental publishing to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Networking and API calls
+  http: ^1.2.1
+
+  # Modern fonts
+  google_fonts: ^6.2.1
+
+  # For progress indicators and circular bars
+  percent_indicator: ^4.2.3
+
+  # iOS-style icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/blue_led_bg.png
