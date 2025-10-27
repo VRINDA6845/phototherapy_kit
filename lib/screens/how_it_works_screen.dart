@@ -44,7 +44,7 @@ class HowItWorksScreen extends StatelessWidget {
               content:
                   "Our device is an innovative, **foldable system** designed for home use or in limited resource settings.\n\n"
                   "**Design:** It consists of a robust main body stand supporting the light-emitting umbrella system.\n\n"
-                  "**Operation:** The height of the umbrella is adjusted to the optimum distance from the baby using a **linear actuator**. This actuator smoothly opens and closes the device , ensuring the light intensity is accurately targeted to the baby.",
+                  "**Operation:** The height of the umbrella is adjusted to the optimum distance from the baby using a linear actuator, operated through a DPDT (Double Pole Double Throw) polarity switch. By reversing the polarity of the voltage applied to the actuator’s motor, one direction extends it while the other retracts it. This mechanism smoothly opens and closes the device, ensuring the light intensity is accurately directed toward the baby.",
             ),
 
             // 4. Step-by-Step Guide
@@ -60,9 +60,9 @@ class HowItWorksScreen extends StatelessWidget {
                   "**Step 3: Prepare the Baby**\n"
                   "Apply specially designed **eye shields (goggles)** to protect the baby's eyes from the intense light. Dress the baby only in a diaper for maximum skin exposure to absorb the bilirubin.\n\n"
                   "**Step 4: Set Intensity**\n"
-                  "Use the 'Light Power' section on the Dashboard to set the required light intensity (e.g., 70% or 80%). Use the optimal intensity suggested by the doctor.\n\n"
+                  "Set the light power intensity using the adjustable dimmer switch . Use the optimal intensity suggested by the doctor.\n\n"
                   "**Step 5: Start Treatment**\n"
-                  "Start the timer and continuously monitor the temperature. Turn the baby every 2–3 hours during treatment so light covers the entire body evenly.\n\n"
+                  "Continuously monitor the temperature. Turn the baby every 2–3 hours during treatment so light covers the entire body evenly.\n\n"
                   "**Caution:** Ensure the baby does not overheat and is fed (breastfed/formula) every 2–4 hours to help flush out the bilirubin quickly.",
             ),
 

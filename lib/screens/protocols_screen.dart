@@ -42,8 +42,8 @@ class ProtocolsScreen extends StatelessWidget {
               content:
                   "The light dose, or Spectral Irradiance, determines how quickly bilirubin levels decrease. The intensity is set based on the severity of the baby's jaundice.\n\n"
                   "💡 Optimal Wavelength: Blue-green light, 460–490 nm (fixed by LED type).\n\n"
-                  "🌤 Standard Phototherapy (Mild/Preventative): Irradiance of 8–10 µW/cm²/nm (≈ 60% Intensity).\n\n"
-                  "☀️ Intensive Phototherapy (Severe/Rising Bilirubin): Irradiance must be 30 µW/cm²/nm or higher (≈ 90–100% Intensity).\n\n"
+                  "🌤 Standard Phototherapy (Mild/Preventative): Irradiance of 8–10 µW/cm²/nm .\n\n"
+                  "☀️ Intensive Phototherapy (Severe/Rising Bilirubin): Irradiance must be 30 µW/cm²/nm or higher.\n\n"
                   "📏 Maintain distance of 35–45 cm using the linear actuator.\n"
                   "[Source: AAP Technical Report]",
             ),

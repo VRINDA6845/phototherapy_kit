@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../services/esp_service.dart';
 import '../widgets/info_card.dart';
-import '../widgets/timer_card.dart';
-import 'dart:async';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
@@ -19,13 +17,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
   bool isConnected = false;
   bool isLoading = true;
 
-  Timer? timer;
-
   @override
   void initState() {
     super.initState();
     fetchData();
-    timer = Timer.periodic(const Duration(seconds: 2), (_) => fetchData());
   }
 
   Future<void> fetchData() async {
@@ -44,12 +39,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
         isLoading = false;
       });
     }
-  }
-
-  @override
-  void dispose() {
-    timer?.cancel();
-    super.dispose();
   }
 
   @override
@@ -112,8 +101,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               : Colors.greenAccent,
                         ),
                         const SizedBox(height: 20),
-                        const TimerCard(sessionTime: 45),
-                        const SizedBox(height: 10),
                         Text(
                           "Optimum Conditions:\n• Temperature: 36.5°C – 37.5°C\n• Light Intensity: 30,000 – 40,000 Lux",
                           textAlign: TextAlign.center,
